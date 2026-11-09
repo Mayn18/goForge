@@ -1,0 +1,13 @@
+{
+  "name": "goforge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A self-paced, documentation-first Go backend engineering curriculum. Static site, no dependencies.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "validate": "node scripts/validate.mjs",
+    "check-links": "node scripts/check-links.mjs --anchors"
+  },
+  "license": "MIT"
+}

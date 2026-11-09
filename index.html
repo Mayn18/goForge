@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoForge · Go backend engineering curriculum</title>
+  <meta name="description" content="A self-paced, documentation-first curriculum for becoming an independent Go backend engineer. Skill tree, lessons, projects, and local progress tracking.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161b22'/%3E%3Cpath d='M6 20h16l4-4H10zM12 20v4h8v-4' fill='%23ff8a3d'/%3E%3Crect x='20' y='7' width='3' height='3' fill='%23ffd166'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try { var t = localStorage.getItem('goforge:theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top" role="banner">
+    <a class="logo" href="#/" aria-label="GoForge home">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M5 20h17l5-5H10zM12 20v5h9v-5" fill="currentColor"/><rect x="20" y="6" width="3.2" height="3.2" fill="var(--spark)"/><rect x="24" y="10" width="2.2" height="2.2" fill="var(--spark)" opacity=".7"/></svg>
+      <span>GoForge</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#/" data-route="">Dashboard</a>
+      <a href="#/tree" data-route="tree">Skill tree</a>
+      <a href="#/diagnostic" data-route="diagnostic">Diagnostic</a>
+      <a href="#/capstone" data-route="capstone">Beep-Bot</a>
+      <a href="#/projects" data-route="projects">Projects</a>
+      <a href="#/reference" data-route="reference">Reference</a>
+      <a href="#/guide" data-route="guide">Guide</a>
+    </nav>
+    <div class="top__tools">
+      <button class="btn btn--ghost" id="btn-search" type="button" aria-label="Search lessons and references" title="Search ( / )">Search <kbd>/</kbd></button>
+      <button class="btn btn--ghost btn--icon" id="btn-theme" type="button" aria-label="Toggle light and dark theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <div id="overlay" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:2rem">GoForge needs JavaScript. It runs entirely in your browser; there is no server.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
